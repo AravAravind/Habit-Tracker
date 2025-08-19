@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tracker-container">
+        <h1>Habit Tracker</h1>
+        <p id="greeting">Welcome! Enter your start date below.</p>
+
+        <div id="setup-section" class="section">
+            <input type="date" id="startDateInput" aria-label="Start Date">
+            <button id="saveButton">Start Tracking</button>
+        </div>
+
+        <div id="tracker-section" class="section" style="display: none;">
+            <p>You have been on your journey for...</p>
+            <div id="dayCounter"></div>
+            <button id="resetButton">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
